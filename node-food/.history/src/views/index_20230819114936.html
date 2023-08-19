@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<h1>Đây là FE</h1>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/get-food'
+        }).then(result=>{
+            console.log(result)
+        }).catch();
+    </script>
+
+</body>
+
+</html>

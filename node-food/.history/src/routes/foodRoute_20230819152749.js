@@ -1,0 +1,16 @@
+import express from "express";
+import { likeRes, unlikeRes } from "../controllers/foodController.js";
+
+const foodRoutes = express.Router();
+
+
+foodRoutes.post("/like-res", likeRes);
+foodRoutes.post("/rateRes", unlikeRes);
+foodRoutes.post("/rateRes", createRateRes);
+foodRouter.post("/order", unlikeRes);
+foodRoutes.delete("/unlike-res", unlikeRes);
+
+
+foodRouter.get("/get-likeRes", getLikeRes);
+foodRouter.get("/get-rateResUser", getRateResUser);
+export default foodRoutes;
